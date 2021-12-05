@@ -1,0 +1,90 @@
+.body {
+  width: 1920px;
+  height: 4260px;
+  background-color: azure;
+  margin: auto;
+}
+.body .head {
+  display: flex;
+}
+.body .head img {
+  margin-left: 390px;
+  margin-top: 25px;
+}
+.body .head .v {
+  display: flex;
+  position: absolute;
+  margin-left: 480px;
+}
+.body .head .v .o .p {
+  color: rgb(67, 203, 131);
+  margin-top: 55px;
+  margin-left: 305px;
+}
+.body .head .v .o .m {
+  border-bottom: 3px solid rgb(67, 203, 131);
+  width: 40px;
+  margin-left: 305px;
+  margin-top: -18px;
+}
+.body .head .v p {
+  margin-left: 45px;
+  margin-top: 55px
+}
+.body .head .v .x {
+  width: 132px;
+  height: 33px;
+  background-color: white;
+  margin-top: 45px;
+  margin-left: 40px;
+  text-align: center;
+  color: rgb(67, 203, 131);
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.body .banner {
+  display: flex;
+}
+.body .banner img {
+  margin-top: 210px;
+}
+.body .banner .ban {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 750px;
+}
+.body .banner .ban h1 {
+  color: rgb(67, 203, 131);
+  margin-top: 315px;
+  margin-left: 40px;
+  font-size: 45px;
+}
+.body .banner .ban p {
+  margin: 0px;
+  margin-left: 40px;
+  margin-top: -15px;
+  font-size: 21px;
+}
+.body .banner .ban button {
+  width: 220px;
+  height: 60px;
+  background-color: rgb(67, 203, 131);
+  color: white;
+  border-radius: 30px;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 40px;
+}
+.body .img {
+  margin-left: 1085px;
+  margin-top: -825px;
+}
+.body .banner .s {
+  margin-top: 342px;
+  width: 450px;
+  height: 450px;
+  margin-left: 750px;
+  position: relative;
+}
