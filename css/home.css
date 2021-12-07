@@ -284,6 +284,8 @@
 }
 .body .container img {
   margin-left: 115px;
+  height: 290px;
+  margin-top: 47px;
 }
 .body .container .conten {
   display: flex;
@@ -310,6 +312,7 @@
   margin-top: -76px;
   margin-left: 142px;
   position: relative;
+  border-radius: 5px;
 }
 .body .container .concept p {
   font-size: 45px;
@@ -317,9 +320,328 @@
   margin: 0px;
   margin-top: 20px;
 }
+.body .container .concept .moon {
+  margin-left: 55px;
+  margin-top: 45px;
+  color: rgb(80, 80, 80);
+}
+.body .container .concept .moon input {
+  border: 0px;
+  margin-left: 10px;
+}
+.body .container .concept .moon .border {
+  width: 347px;
+  border-bottom: 1px solid silver;
+  margin-left: -12px;
+  margin-top: 5px;
+}
+.body .container .concept .input {
+  margin-left: 55px;
+  margin-top: 30px;
+  color: rgb(80, 80, 80);
+}
+.body .container .concept .input input {
+  border: 0px;
+  margin-left: 10px;
+}
+.body .container .concept .input .border {
+  width: 347px;
+  border-bottom: 1px solid silver;
+  margin-top: 5px;
+  margin-left: -12px;
+}
+.body .container .concept .checkbox {
+  display: flex;
+}
+.body .container .concept .checkbox input {
+  margin-top: 24px;
+  margin-left: 43px;
+}
+.body .container .concept .checkbox .p {
+  color: silver;
+  font-size: 15px;
+  margin-top: 23px;
+  margin-left: 13px;
+}
+.body .container .concept .button {
+  display: flex;
+}
+.body .container .concept .button button {
+  width: 155px;
+  height: 47px;
+  background-color: rgb(67, 203, 131);
+  border-radius: 30px;
+  text-align: center;
+  border: 0px;
+  margin-left: 43px;
+  margin-top: 37px;
+}
+.body .container .concept .button button a {
+  color: white;
+  text-decoration: none;
+}
+.body .container .concept .button .column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.body .container .concept .button p {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: -22px;
+}
+.body .container .concept .button .p {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: 22px;
+}
+.body .container .concept .href {
+  margin-top: 25px;
+}
+.body .container .concept .href .a {
+  color: silver;
+  margin-left: 43px;
+}
 .body .container .img {
   width: 235px;
-  height: 398px;
-  margin-top: 0px;
+  height: 317px;
+  margin-top:67px;
   margin-left: -14px;
+}
+.body .hamburger .new h1 {
+  color: rgb(67, 203, 131);
+  font-size: 41.5px;
+  margin-top: 83px;
+  margin-left: 380px;
+}
+.body .hamburger .new .all-new {
+  display: flex;
+}
+body .hamburger .new .all-new p {
+  margin-top: -10px;
+  color: rgb(80, 80, 80);
+  margin-left: 387px;
+  font-size: 18px;
+}
+.body .hamburger .new .all-new button {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(67, 203, 131);
+  border-radius: 30px;
+  border: 0px;
+  margin-left: 277px;
+  margin-top: -15px;
+}
+.body .hamburger .new .all-new button a {
+  color: white;
+  text-decoration: none;
+}
+.body .hamburger .border {
+  width: 1150px;
+  border-bottom: 1px solid silver;
+  margin: auto;
+  margin-top: 62px;
+}
+.body .hamburger .november {
+  display: flex;
+}
+.body .hamburger .november .france {
+  width: 50%;
+}
+.body .hamburger .november .france h1 {
+  margin-left: 380px;
+  margin-top: 60px;
+  font-size: 34px;
+}
+.body .hamburger .november .france p {
+  color: rgb(80, 80, 80);
+  margin: 0px;
+  margin-left: 380px;
+  font-size: 19px;
+} 
+.body .hamburger .november .france .heart {
+  display: flex;
+  margin-left: 380px;
+  margin-top: 10px;
+}
+.body .hamburger .november .france .heart img {
+  width: 16px;
+  height: 14px;
+}
+.body .hamburger .november .france .heart .img-1 {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+}
+.body .hamburger .november .france .heart p {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.body .hamburger .november .france .heart .five {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 315px;
+}
+.body .hamburger .november .darkness {
+  width: 50%;
+  margin-left: 55px;
+}
+.body .hamburger .november .darkness h1 {
+  margin-top: 60px;
+}
+.body .hamburger .november .darkness p {
+  color: rgb(80, 80, 80);
+  margin: 0px;
+  font-size: 19px;
+}
+.body .hamburger .november .darkness .heart {
+  display: flex;
+  margin-top: 36px;
+}
+.body .hamburger .november .darkness .heart img {
+  width: 16px;
+  height: 14px;
+}
+.body .hamburger .november .darkness .heart .img-1 {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+}
+.body .hamburger .november .darkness .heart p {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.body .hamburger .november .darkness .heart .five {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 300px;
+}
+.body .hamburger .hanover {
+  display: flex;
+}
+.body .hamburger .hanover .mom {
+  width: 50%;
+  margin-left: 380px;
+}
+.body .hamburger .hanover .mom h1 {
+  font-size: 34px;
+  margin-top: 70px;
+}
+.body .hamburger .hanover .mom p {
+  color: rgb(80, 80, 80);
+  margin: 0px;
+  font-size: 18px;
+}
+.body .hamburger .hanover .mom .heart {
+  display: flex;
+  margin-top: 36px;
+}
+.body .hamburger .hanover .mom .heart img {
+  width: 16px;
+  height: 14px;
+}
+.body .hamburger .hanover .mom .heart .img-1 {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+}
+.body .hamburger .hanover .mom .heart p {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.body .hamburger .hanover .mom .heart .five {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 295px;
+}
+.body .hamburger .hanover .world {
+  width: 50%;
+  margin-left: -320px;
+}
+.body .hamburger .hanover .world h1 {
+  font-size: 34px;
+  margin-top: 70px;
+}
+.body .hamburger .hanover .world p {
+  color: rgb(80, 80, 80);
+  margin: 0px;
+  font-size: 19px;
+}
+.body .hamburger .hanover .world .heart {
+  display: flex;
+  margin-top: 36px;
+}
+.body .hamburger .hanover .world .heart img {
+  width: 16px;
+  height: 14px;
+}
+.body .hamburger .hanover .world .heart .img-1 {
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+}
+.body .hamburger .hanover .world .heart p {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.body .hamburger .hanover .world .heart .five {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 295px;
+}
+.body .end {
+  width: 1920px;
+  height: 460px;
+  background-color: rgb(37, 44, 58);
+  margin-top: 120px;
+  display: flex;
+}
+.body .end .enter {
+  display: flex;
+  flex-direction: column;
+}
+.body .end .enter .lean {
+  display: flex;
+  margin-top: 77px;
+}
+.body .end .enter .lean img {
+  width: 50px;
+  height: 60px;
+  margin-left: 380px;
+}
+.body .end .enter .lean .learn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.body .end .enter .lean .learn h1 {
+  margin: 0px;
+  color: white;
+  font-size: 27px;
+  margin-top: 7px;
+}
+.body .end .enter .lean .learn p {
+  margin: 0px;
+  font-size: 15px;
+  color: white;
+}
+.body .end .enter .mix p {
+  color: silver;
+  margin-left: 390px;
+}
+.body .end .enter .mix .border {
+  border-bottom: 1px solid silver;
+  width: 280px;
+  margin-top: 25px;
+  margin-left: 390px;
+}
+.body .end .enter .img-6 {
+  width: 225px;
+  height: 45px;
+  margin-left: 380px;
+  margin-top: 10px;
 }
