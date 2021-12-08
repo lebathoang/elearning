@@ -1,46 +1,74 @@
 .body {
   width: 1920px;
   height: 4260px;
-  background-color: azure;
   margin: auto;
 }
 .body .head {
   display: flex;
 }
 .body .head img {
-  margin-left: 390px;
+  width: 40%;
+  width: 75px;
+  height: 75px;
+  margin-left: 420px;
   margin-top: 25px;
 }
-.body .head .v {
+.body .head .container {
+  width: 60%;
+  margin-top: 25px;
+  margin-left: 205px;
+  font-size: 20px;
+}
+.body .head .container ul {
   display: flex;
-  position: absolute;
-  margin-left: 480px;
 }
-.body .head .v .o .p {
-  color: rgb(67, 203, 131);
-  margin-top: 55px;
-  margin-left: 305px;
+.body .head .container ul li {
+  list-style-type: none;
 }
-.body .head .v .o .m {
-  border-bottom: 3px solid rgb(67, 203, 131);
-  width: 40px;
-  margin-left: 305px;
-  margin-top: -18px;
-}
-.body .head .v p {
-  margin-left: 45px;
-  margin-top: 55px
-}
-.body .head .v .x {
-  width: 132px;
-  height: 33px;
-  background-color: white;
-  margin-top: 45px;
+.body .head .container ul li a {
+  color: black;
   margin-left: 40px;
-  text-align: center;
-  color: rgb(67, 203, 131);
+}
+.body .head .container ul li a:hover {
+  color: green;
+}
+.body .head .container ul li a:focus {
+  color: red;
+}
+.body .head .container ul .li {
+  list-style-type: none;
+}
+.body .head .container ul .li a {
+  color: black;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.body .head .container ul .li a:hover {
+  color: green;
+}
+.body .head .container ul .li a:focus {
+  color: red;
+}
+.body .head .container ul .link {
+  list-style-type: none;
+  height: 32px;
+  width: 130px;
+  border: 0.5px solid rgb(230, 230, 230);
+  margin-left: 20px;
   border-radius: 20px;
-  padding-top: 10px;
+  margin-top: -5px;
+  padding-top: 5px;
+}
+.body .head .container ul .link a {
+  color: black;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.body .head .container ul .link a:hover {
+  color: green;
+}
+.body .head .container ul .link a:focus {
+  color: red;
 }
 .body .banner {
   display: flex;
@@ -79,7 +107,7 @@
 }
 .body .img {
   margin-left: 1085px;
-  margin-top: -825px;
+  margin-top: -810px;
 }
 .body .banner .s {
   margin-top: 342px;
@@ -274,7 +302,7 @@
   font-size: 25px;
   color: rgb(67, 203, 131);
 }
-.body .container {
+.body .containe {
   width: 1920px;
   height: 398px;
   background-color: rgb(241, 227, 252);
@@ -282,30 +310,30 @@
   top: -90px;
   display: flex;
 }
-.body .container img {
+.body .containe img {
   margin-left: 115px;
   height: 290px;
   margin-top: 47px;
 }
-.body .container .conten {
+.body .containe .conten {
   display: flex;
   flex-direction: column;
   margin-left: 90px;
 }
-.body .container .conten p {
+.body .containe .conten p {
   margin-top: 160px;
   font-size: 21px;
 }
-.body .container .conten p a {
+.body .containe .conten p a {
   color: red;
   text-decoration: none;
 }
-.body .container .conten h1 {
+.body .containe .conten h1 {
   margin: 0px;
   margin-top: -10px;
   font-size: 41.5px;
 }
-.body .container .concept {
+.body .containe .concept {
   width: 460px;
   height: 563px;
   background-color: white;
@@ -314,59 +342,124 @@
   position: relative;
   border-radius: 5px;
 }
-.body .container .concept p {
+.body .containe .concept img {
+  width: 395px;
+  height: 435px;
+  margin: 0px;
+  margin-left: 66px;
+}
+.body .containe .concept .app {
   font-size: 45px;
-  text-align: center;
   margin: 0px;
   margin-top: 20px;
+  position: absolute;
+  top: 2px;
+  left: 182px;
 }
-.body .container .concept .moon {
+.body .containe .concept .moon {
   margin-left: 55px;
   margin-top: 45px;
   color: rgb(80, 80, 80);
+  position: absolute;
+  top: 75px;
 }
-.body .container .concept .moon input {
+.body .containe .concept .moon input {
   border: 0px;
   margin-left: 10px;
 }
-.body .container .concept .moon .border {
+.body .containe .concept .moon .border {
   width: 347px;
   border-bottom: 1px solid silver;
   margin-left: -12px;
   margin-top: 5px;
 }
-.body .container .concept .input {
+.body .containe .concept .input {
   margin-left: 55px;
   margin-top: 30px;
   color: rgb(80, 80, 80);
+  position: absolute;
+  top: 145px;
 }
-.body .container .concept .input input {
+.body .containe .concept .input input {
   border: 0px;
   margin-left: 10px;
 }
-.body .container .concept .input .border {
+.body .containe .concept .input .border {
   width: 347px;
   border-bottom: 1px solid silver;
   margin-top: 5px;
   margin-left: -12px;
 }
-.body .container .concept .checkbox {
-  display: flex;
+.body .containe .concept .input-1 {
+  margin-left: 55px;
+  margin-top: 30px;
+  color: rgb(80, 80, 80);
+  position: absolute;
+  top: 200px;
 }
-.body .container .concept .checkbox input {
+.body .containe .concept .input-1 input {
+  border: 0px;
+  margin-left: 10px;
+}
+.body .containe .concept .input-1 .border {
+  width: 347px;
+  border-bottom: 1px solid silver;
+  margin-top: 5px;
+  margin-left: -12px;
+}
+.body .containe .concept .input-2 {
+  margin-left: 55px;
+  margin-top: 30px;
+  color: rgb(80, 80, 80);
+  position: absolute;
+  top: 250px;
+}
+.body .containe .concept .input-2 input {
+  border: 0px;
+  margin-left: 10px;
+}
+.body .containe .concept .input-2 .border {
+  width: 347px;
+  border-bottom: 1px solid silver;
+  margin-top: 5px;
+  margin-left: -12px;
+}
+.body .containe .concept .input-3 {
+  margin-left: 55px;
+  margin-top: 30px;
+  color: rgb(80, 80, 80);
+  position: absolute;
+  top: 310px;
+}
+.body .containe .concept .input-3 input {
+  border: 0px;
+  margin-left: 10px;
+}
+.body .containe .concept .input-3 .border {
+  width: 347px;
+  border-bottom: 1px solid silver;
+  margin-top: 5px;
+  margin-left: -12px;
+}
+.body .containe .concept .checkbox {
+  display: flex;
+  position: absolute;
+  top: 375px;
+}
+.body .containe .concept .checkbox input {
   margin-top: 24px;
   margin-left: 43px;
 }
-.body .container .concept .checkbox .p {
+.body .containe .concept .checkbox .term {
   color: silver;
   font-size: 15px;
   margin-top: 23px;
   margin-left: 13px;
 }
-.body .container .concept .button {
+.body .containe .concept .button {
   display: flex;
 }
-.body .container .concept .button button {
+.body .containe .concept .button button {
   width: 155px;
   height: 47px;
   background-color: rgb(67, 203, 131);
@@ -374,39 +467,38 @@
   text-align: center;
   border: 0px;
   margin-left: 43px;
-  margin-top: 37px;
 }
-.body .container .concept .button button a {
+.body .containe .concept .button button a {
   color: white;
   text-decoration: none;
 }
-.body .container .concept .button .column {
+.body .containe .concept .button .column {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 4px;
 }
-.body .container .concept .button p {
-  font-size: 15px;
-  margin: 0px;
-  margin-left: -22px;
-}
-.body .container .concept .button .p {
+.body .containe .concept .button p {
   font-size: 15px;
   margin: 0px;
   margin-left: 22px;
 }
-.body .container .concept .href {
-  margin-top: 25px;
+.body .containe .concept .button .p {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: 22px;
 }
-.body .container .concept .href .a {
-  color: silver;
+.body .containe .concept .href {
+  margin-top: 25px;
   margin-left: 43px;
 }
-.body .container .img {
+.body .containe .concept .href .a {
+  color: silver;
+}
+.body .containe .img {
   width: 235px;
   height: 317px;
   margin-top:67px;
-  margin-left: -14px;
+  margin-left: -18px;
 }
 .body .hamburger .new h1 {
   color: rgb(67, 203, 131);
@@ -579,8 +671,8 @@ body .hamburger .new .all-new p {
   height: 14px;
 }
 .body .hamburger .hanover .world .heart .img-1 {
-  width: 16px;
-  height: 14px;
+  width: 18px;
+  height: 16px;
   margin-left: 30px;
 }
 .body .hamburger .hanover .world .heart p {
@@ -598,50 +690,204 @@ body .hamburger .new .all-new p {
   height: 460px;
   background-color: rgb(37, 44, 58);
   margin-top: 120px;
+}
+.body .end .max {
   display: flex;
 }
-.body .end .enter {
+.body .end .max .enter {
   display: flex;
   flex-direction: column;
 }
-.body .end .enter .lean {
+.body .end .max .enter .lean {
   display: flex;
-  margin-top: 77px;
+  margin-top: 75px;
 }
-.body .end .enter .lean img {
+.body .end .max .enter .lean img {
   width: 50px;
   height: 60px;
   margin-left: 380px;
 }
-.body .end .enter .lean .learn {
+.body .end .max .enter .lean .learn {
   display: flex;
   flex-direction: column;
   margin-left: 5px;
 }
-.body .end .enter .lean .learn h1 {
+.body .end .max .enter .lean .learn h1 {
   margin: 0px;
   color: white;
-  font-size: 27px;
-  margin-top: 7px;
+  font-size: 21px;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.body .end .enter .lean .learn p {
+.body .end .max .enter .lean .learn p {
   margin: 0px;
-  font-size: 15px;
+  font-size: 11px;
   color: white;
 }
-.body .end .enter .mix p {
+.body .end .max .enter .mix p {
   color: silver;
   margin-left: 390px;
+  font-size: 13px;
 }
-.body .end .enter .mix .border {
-  border-bottom: 1px solid silver;
-  width: 280px;
-  margin-top: 25px;
+.body .end .max .enter .mix .border {
+  border-bottom: 1px solid rgb(80, 80, 80);
+  width: 227px;
+  margin-top: 18px;
   margin-left: 390px;
 }
-.body .end .enter .img-6 {
-  width: 225px;
-  height: 45px;
+.body .end .max .enter .img-6 {
+  width: 187px;
+  height: 38px;
   margin-left: 380px;
   margin-top: 10px;
+}
+.body .end .max .ender h4 {
+  color: white;
+  margin: 0px;
+  margin-left: 30px;
+  margin-top: 95px;
+  font-size: 11px;
+}
+.body .end .max .ender .fix {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 39px;
+}
+.body .end .max .ender .fix .p-5 {
+  color: silver;
+  margin: 0px;
+  font-size: 14px;
+}
+.body .end .max .ender .fix .p-4 {
+  margin: 0px;
+  color: rgb(124, 124, 124);
+  font-size: 13px;
+  margin-left: 3px;
+}
+.body .end .max .ender .day {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 19px;
+}
+.body .end .max .ender .day .t {
+  color: silver;
+  margin: 0px;
+  font-size: 14px;
+}
+.body .end .max .ender .day .t-1 {
+  margin: 0px;
+  color: rgb(124, 124, 124);
+  font-size: 13px;
+  margin-left: 3px;
+}
+.body .end .max .enner {
+  display: flex;
+  flex-direction: column;
+  color: silver;
+  margin-left: 50px;
+}
+.body .end .max .enner h4 {
+  margin-top: 95px;
+  font-size: 11px;
+  color: white;
+}
+.body .end .max .enner .p {
+ margin: 0px;
+ margin-top: 23px;
+ font-size: 14px;
+}
+.body .end .max .enner p {
+ margin: 0px;
+ margin-top: 20px;
+ font-size: 14px;
+}
+.body .end .max .enper {
+  display: flex;
+  flex-direction: column;
+}
+.body .end .max .enper h4 {
+  margin-top: 95px;
+  font-size: 11px;
+  margin-left: 170px;
+  color: white;
+}
+.body .end .max .enper p {
+  margin: 0px;
+  font-size: 14px;
+  margin-left: 170px;
+  color: rgb(124, 124, 124);
+  margin-top: 20px;
+}
+.body .end .max .enper .input {
+  width: 260px;
+  height: 33px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 170px;
+  display: flex;
+}
+.body .end .max .enper .input .a {
+  width: 180px;
+  margin-left: 20px;
+  padding-top: 7px;
+  font-size: 14px;
+  color: rgb(124, 124, 124);
+}
+.body .end .max .enper .input .a input {
+  border: 0px;
+  width: 77px;
+}
+.body .end .max .enper .input .b {
+  width: 80px;
+}
+.body .end .max .enper .input .b button {
+  background-color: rgb(67, 203, 131);
+  border: 0px;
+  width: 80px;
+  height: 33px;
+}
+.body .end .max .enper .input .b button a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.body .end .copy {
+  width: 1920px;
+  height: 60px;
+  background-color: rgb(29, 35, 46);
+  margin-top: 133px;
+  display: flex;
+}
+.body .end .copy .made {
+  display: flex;
+  color: rgb(124, 124, 124);
+  margin-left: 390px;
+}
+.body .end .copy .made p {
+  font-size: 14px;
+  margin-top: 21px;
+}
+.body .end .copy .made img {
+  width: 15px;
+  height: 15px;
+  margin-top: 21px;
+  margin-left: 3px;
+}
+.body .end .copy .made .p {
+  font-size: 14px;
+  margin-left: 3px;
+  margin-top: 21px;
+}
+.body .end .copy .make {
+  display: flex;
+  color: rgb(124, 124, 124);
+  margin-top: 7px;
+  margin-left: 545px;
+}
+.body .end .copy .make p {
+  font-size: 14px;
+}
+.body .end .copy .make .p {
+  font-size: 14px;
+  margin-left: 23px;
 }
