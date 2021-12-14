@@ -1,893 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COMMON */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  width: calc(100% / 12);
+}
+.col-2 {
+  width: calc(100% / 6);
+}
+.col-3 {
+  width: calc(100% / 4);
+}
+.col-4 {
+  width: calc(100% / 3);
+}
+.col-5 {
+  width: calc(5 * (100% / 12));
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: calc(7 * (100% / 12));
+}
+.col-8 {
+  width: calc(8 * (100% / 12));
+}
+.col-9 {
+  width: calc(9 * (100% / 12));
+}
+.col-10 {
+  width: calc(10 * (100% / 12));
+}
+.col-11 {
+  width: calc(11 * (100% / 12));
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .body {
-  width: 1920px;
-  height: 4260px;
-  margin: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 .body .head {
+  padding-top: 25px;
+}
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+.row {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
 }
-.body .head img {
-  width: 40%;
-  width: 75px;
-  height: 75px;
-  margin-left: 420px;
-  margin-top: 25px;
+.body .head ul {
+  display: flex;;
 }
-.body .head .container {
-  width: 60%;
-  margin-top: 25px;
-  margin-left: 205px;
-  font-size: 20px;
-}
-.body .head .container ul {
-  display: flex;
-}
-.body .head .container ul li {
+.body .head ul li {
   list-style-type: none;
+  margin-left: 48px;
 }
-.body .head .container ul li a {
-  color: black;
-  margin-left: 40px;
-}
-.body .head .container ul li a:hover {
-  color: green;
-}
-.body .head .container ul li a:focus {
-  color: red;
-}
-.body .head .container ul .li {
-  list-style-type: none;
-}
-.body .head .container ul .li a {
-  color: black;
-  margin-left: 40px;
+.body .head ul li a {
+  color: rgb(90, 110, 121);
   text-decoration: none;
 }
-.body .head .container ul .li a:hover {
-  color: green;
+.body .head ul li a:hover {
+  text-decoration: underline; 
+  color: rgb(67, 203, 131);
 }
-.body .head .container ul .li a:focus {
+.body .head ul li a:focus {
   color: red;
 }
-.body .head .container ul .link {
-  list-style-type: none;
-  height: 32px;
+.body .head ul .link {
+  text-align: center;
+  height: 30px;
   width: 130px;
   border: 0.5px solid rgb(230, 230, 230);
-  margin-left: 20px;
+  margin-left: 40px;
   border-radius: 20px;
-  margin-top: -5px;
-  padding-top: 5px;
+  margin-top: -6px;
+  padding-top: 4px;
 }
-.body .head .container ul .link a {
-  color: black;
-  margin-left: 20px;
+.body .head ul .link a {
+  color: rgb(90, 110, 121);
+}
+.body .head ul .link a:hover {
+  color: rgb(67, 203, 131);
   text-decoration: none;
 }
-.body .head .container ul .link a:hover {
-  color: green;
-}
-.body .head .container ul .link a:focus {
+.body .head ul .link a:focus {
   color: red;
 }
 .body .banner {
   display: flex;
 }
-.body .banner img {
-  margin-top: 210px;
+.body .banner .photo{
+  display: flex;
 }
 .body .banner .ban {
-  display: flex;
-  flex-direction: column;
+  margin-top: 220px;
+}
+.body .banner .col-6 {
   position: absolute;
-  margin-left: 750px;
 }
-.body .banner .ban h1 {
-  color: rgb(67, 203, 131);
-  margin-top: 315px;
-  margin-left: 40px;
-  font-size: 45px;
+.body .banner .photo .img {
+  height: 1100px;
+  margin-top: -26px;
 }
-.body .banner .ban p {
-  margin: 0px;
-  margin-left: 40px;
-  margin-top: -15px;
-  font-size: 21px;
+.body .banner .photo .flower {
+  height: 425px;
+  margin: 370px 0px 0px -433px;
 }
-.body .banner .ban button {
+.body .banner .menu {
+  margin-top: -182px;
+}
+.body .banner .menu h1 {
+  font-size: 43px;
+  color: #43cb83;
+}
+.body .banner .menu p {
+  color: #5a6e79;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.body .banner .menu button {
   width: 220px;
-  height: 60px;
-  background-color: rgb(67, 203, 131);
-  color: white;
+  height: 58px;
+  background-color: #43cb83;
   border-radius: 30px;
   border: 0px;
-  font-size: 20px;
+  margin-top: 37px;
+}
+.body .banner .menu button a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.body .main {
+  margin-top: -169px;
+  position: relative;
+}
+.body .main .top-main {
+  display: flex;
+}
+.body .main .top-main .engineer {
+  width: 360px;
+  margin: 0px 15px 0px;
+  height: 283px;
+  background-color: #f1e3fc;
+}
+.body .main .top-main img {
+  margin: 65px 0px 0px 145px;
+}
+.body .main .top-main h1 {
+  margin: 50px 0px 0px 94px;
+}
+.body .main .top-main .accoun {
+  width: 360px;
+  margin: 0px 15px 0px;
+  height: 283px;
+  background-color: #e3fcfa;
+}
+.body .main .top-main .h1 {
+  margin: 57px 0px 0px 98px;
+}
+.body .main .top-main .creat {
+  width: 360px;
+  margin: 0px 15px 0px;
+  height: 283px;
+  background-color: #fcf0e3;
+}
+.body .main .top-main .h {
+  margin: 41px 0px 0px 120px;
+}
+.body .main .bottom-main {
+  display: flex;
+}
+.body .main .bottom-main .design {
+  width: 360px;
+  margin: 37px 15px 0px;
+  height: 283px;
+  background-color: #fceee3;
+}
+.body .main .bottom-main img {
+  margin: 70px 0px 0px 145px;
+}
+.body .main .bottom-main h1 {
+  margin: 45px 0px 0px 130px;
+}
+.body .main .bottom-main .physic {
+  width: 360px;
+  height: 283px;
+  background-color: #f3fce3;
+  margin: 37px 15px 0px;
+}
+.body .main .bottom-main .img {
+  margin: 60px 0px 0px 150px;
+}
+.body .main .bottom-main .h1 {
+  margin: 52px 0px 0px 125px;
+}
+.body .main .bottom-main .chemistry {
+  width: 360px;
+  height: 283px;
+  background-color: #e3f3fc;
+  margin: 37px 15px 0px;
+}
+.body .main .bottom-main .img-1 {
+  margin: 57px 0px 0px 145px;
+}
+body .main .bottom-main .h {
+  margin: 43px 0px 0px 106px;
+}
+.body .main-menu .logo {
+  margin-top: -180px;
+}
+.body .main-menu .menu {
+  display: flex;
+  position: relative;
+  top: -800px;
+  margin-left: -130px;
+}
+.body .main-menu .menu .left-menu {
+  position: relative;
+}
+.body .main-menu .menu .right-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 60px;
+}
+.body .main-menu .menu .right-menu h1 {
+  color: #43cb83;
+  font-size: 40px;
+}
+.body .main-menu .menu .right-menu p {
+  color: #5a6e79;
+  font-size: 18px;
   margin-top: 35px;
-  margin-left: 40px;
 }
-.body .img {
-  margin-left: 1085px;
-  margin-top: -810px;
-}
-.body .banner .s {
-  margin-top: 342px;
-  width: 450px;
-  height: 450px;
-  margin-left: 750px;
-  position: relative;
-}
-.body .col {
-  display: flex;
-}
-.body .col .ling {
-  width: 360px;
-  height: 280px;
-  background-color: rgb(241, 227, 252);
-  margin-left: 389px;
-  margin-top: -168px;
-}
-.body .col .ling img {
-  margin-left: 145px;
-  margin-top: 65px;
-}
-.body .col .ling p {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 43px;
-}
-.body .col .ling-1 {
-  width: 360px;
-  height: 280px;
-  background-color: rgb(227, 252, 250);
-  margin-left: 31px;
-  margin-top: -168px;
-}
-.body .col .ling-1 img {
-  margin-top: 65px;
-  margin-left: 145px;
-}
-.body .col .ling-1 p {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 50px;
-}
-.body .col .ling-2 {
-  width: 360px;
-  height: 280px;
-  background-color: rgb(252, 240, 227);
-  margin-left: 31px;
-  margin-top: -168px;
-  position: relative;
-}
-.body .col .ling-2 img {
-  margin-top: 65px;
-  margin-left: 145px;
-}
-.body .col .ling-2 p {
-  text-align: center;
-  font-size: 30px;
-}
-.body .col-1 {
-  display: flex;
-}
-.body .col-1 .luck {
-  width: 360px;
-  height: 280px;
-  margin-left: 389px;
-  background-color: rgb(252, 238, 227);
-  margin-top: 37px;
-  position: relative;
-}
-.body .col-1 .luck img {
-  margin-top: 65px;
-  margin-left: 145px;
-}
-.body .col-1 .luck p {
-  text-align: center;
-  font-size: 30px;
+.body .main-menu .menu .right-menu .p {
+  color: #5a6e79;
+  font-size: 16px;
   margin-top: 40px;
 }
-.body .col-1 .luck-1 {
-  width: 360px;
-  height: 280px;
-  background-color: rgb(243, 252, 227);
-  margin-top: 37px;
-  margin-left: 31px;
-}
-.body .col-1 .luck-1 img {
-  margin-top: 65px;
-  margin-left: 145px;
-}
-.body .col-1 .luck-1 p {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 40px;
-}
-.body .col-1 .luck-2 {
-  width: 360px;
-  height: 280px;
-  background-color: rgb(227, 243, 252);
-  margin-top: 37px;
-  margin-left: 31px;
-}
-.body .col-1 .luck-2 img {
-  margin-top: 65px;
-  margin-left: 145px;
-}
-.body .col-1 .luck-2 p {
-  text-align: center;
-  font-size: 30px;
-}
-.body .hambug {
+.body .main-menu .menu .right-menu .bottom {
   display: flex;
+  margin-top: 67px;
 }
-.body .hambug .ham {
-  width: 50%;
-}
-.body .hambug .ham .img-3 {
-  width: 665px;
-  height: 515px;
-  margin-bottom: 270px;
-  margin-left: 225px;
-  position: relative;
-}
-.body .hambug .ham .img-4 {
-  margin-left: -894px;
-  margin-top: -185px;
-}
-.body .hambug .bug {
-  width: 50%;
-}
-.body .hambug .bug h1 {
-  color: rgb(67, 203, 131);
-  margin-left: 10px;
-  font-size: 48px;
-  margin-top: 130px;
-}
-.body .hambug .bug p {
-  margin-left: 10px;
-  font-size: 22px;
-  color: rgb(124, 124, 124);
-}
-.body .hambug .bug .p {
-  font-size: 19.5px;
-  margin-left: 10px;
-  color: rgb(124, 124, 124);
-}
-.body .hambug .bug .min {
-  display: flex;
-}
-.body .hambug .bug .min .orange {
+.body .main-menu .menu .right-menu .bottom .student {
   display: flex;
   flex-direction: column;
 }
-.body .hambug .bug .min .orange h1 {
+.body .main-menu .menu .right-menu .bottom .student h1 {
+  font-size: 40px;
+  color: #ffba00;
+}
+.body .main-menu .menu .right-menu .bottom .student p {
+  font-size: 20px;
+  color: #ffba00;
   margin: 0px;
-  color: rgb(255, 186, 0);
-  margin-left: 10px;
-  font-size: 50px;
-  margin-top: 50px;
+  margin-top: -7px;
 }
-.body .hambug .bug .min .orange .p-1 {
-  margin: 0px;
-  color: rgb(255, 186, 0);
-  margin-left: 10px;
-  margin-top: -5px;
-  font-size: 25px;
-}
-.body .hambug .bug .min .orange .h1 {
-  margin: 0px;
-  color: rgb(255, 95, 114);
-  margin-left: 95px;
-  font-size: 50px;
-  margin-top: 50px;
-}
-.body .hambug .bug .min .orange .p-2 {
-  margin: 0px;
-  margin-top: -5px;
-  margin-left: 95px;
-  font-size: 25px;
-  color: rgb(255, 95, 114);
-}
-.body .hambug .bug .min .orange .h {
-  margin: 0px;
-  margin-top: 50px;
-  margin-left: 95px;
-  font-size: 50px;
-  color: rgb(67, 203, 131);
-}
-.body .hambug .bug .min .orange .p-3 {
-  margin: 0px;
-  margin-left: 95px;
-  font-size: 25px;
-  color: rgb(67, 203, 131);
-}
-.body .containe {
-  width: 1920px;
-  height: 398px;
-  background-color: rgb(241, 227, 252);
-  position: relative;
-  top: -90px;
-  display: flex;
-}
-.body .containe img {
-  margin-left: 115px;
-  height: 290px;
-  margin-top: 47px;
-}
-.body .containe .conten {
+.body .main-menu .menu .right-menu .bottom .cour {
   display: flex;
   flex-direction: column;
-  margin-left: 90px;
+  margin-left: 91px;
 }
-.body .containe .conten p {
-  margin-top: 160px;
-  font-size: 21px;
+.body .main-menu .menu .right-menu .bottom .cour h1 {
+  font-size: 40px;
+  color: #ff5f72;
 }
-.body .containe .conten p a {
-  color: red;
+.body .main-menu .menu .right-menu .bottom .cour p {
+  font-size: 20px;
+  color: #ff5f72;
+  margin: 0px;
+  margin-top: -7px;
+}
+.body .main-menu .menu .right-menu .bottom .hour {
+  display: flex;
+  flex-direction: column;
+  margin-left: 85px;
+}
+.body .main-menu .menu .right-menu .bottom .hour h1 {
+  font-size: 40px;
+  color: #43cb83;
+}
+.body .main-menu .menu .right-menu .bottom .hour p {
+  font-size: 20px;
+  color: #43cb83;
+  margin: 0px;
+  margin-top: -7px;
+}
+.body .hamburger {
+  display: flex;
+  height: 400px;
+  background-color: #f1e3fc;
+  position: relative;
+  top: -620px;
+}
+.body .hamburger img {
+  margin: 48px 0px 0px 115px;
+}
+.body .hamburger .pink {
+  width: 1170px;
+  display: flex;
+}
+.body .hamburger .pink .left {
+  width: 55%;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 170px;;
+}
+.body .hamburger .pink .left p {
+  font-size: 16px;
+  color: #252c3a;
+}
+.body .hamburger .pink .left p a {
+  color: #fb384d;
+  font-size: 16px;
   text-decoration: none;
 }
-.body .containe .conten h1 {
-  margin: 0px;
-  margin-top: -10px;
-  font-size: 41.5px;
+.body .hamburger .pink .left h1 {
+  font-size: 40px;
+  color: #252c3a;
 }
-.body .containe .concept {
+.body .hamburger .pink .right {
+  width: 45%;
+}
+.body .hamburger .pink .right .white {
   width: 460px;
-  height: 563px;
+  height: 562px;
   background-color: white;
-  margin-top: -76px;
-  margin-left: 142px;
-  position: relative;
   border-radius: 5px;
+  border: 0.5px solid silver;
+  margin: -75px 0px 0px 67px;
+  position: relative;
 }
-.body .containe .concept img {
-  width: 395px;
-  height: 435px;
-  margin: 0px;
-  margin-left: 66px;
+.body .hamburger .pink .right .white .photo {
+  margin: -48px 0px 0px -53px;
 }
-.body .containe .concept .app {
-  font-size: 45px;
-  margin: 0px;
-  margin-top: 20px;
+.body .hamburger .pink .right .text {
   position: absolute;
-  top: 2px;
-  left: 182px;
+  top: 25px;
 }
-.body .containe .concept .moon {
-  margin-left: 55px;
-  margin-top: 45px;
-  color: rgb(80, 80, 80);
-  position: absolute;
-  top: 75px;
+.body .hamburger .pink .right .text p {
+  font-size: 40px;
+  color: #202020;
+  margin-left: 125px;
 }
-.body .containe .concept .moon input {
-  border: 0px;
-  margin-left: 10px;
+body .hamburger .pink .right .text .text-1 {
+  margin: 40px 0px 0px 45px;
 }
-.body .containe .concept .moon .border {
-  width: 347px;
-  border-bottom: 1px solid silver;
-  margin-left: -12px;
-  margin-top: 5px;
-}
-.body .containe .concept .input {
-  margin-left: 55px;
+.body .hamburger .pink .right .text .text-1 .first {
   margin-top: 30px;
-  color: rgb(80, 80, 80);
-  position: absolute;
-  top: 145px;
 }
-.body .containe .concept .input input {
+.body .hamburger .pink .right .text .text-1 .first span {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #5a6e79;
+}
+.body .hamburger .pink .right .text .text-1 .first span input {
   border: 0px;
-  margin-left: 10px;
-}
-.body .containe .concept .input .border {
-  width: 347px;
-  border-bottom: 1px solid silver;
-  margin-top: 5px;
-  margin-left: -12px;
-}
-.body .containe .concept .input-1 {
-  margin-left: 55px;
-  margin-top: 30px;
-  color: rgb(80, 80, 80);
-  position: absolute;
-  top: 200px;
-}
-.body .containe .concept .input-1 input {
-  border: 0px;
-  margin-left: 10px;
-}
-.body .containe .concept .input-1 .border {
-  width: 347px;
-  border-bottom: 1px solid silver;
-  margin-top: 5px;
-  margin-left: -12px;
-}
-.body .containe .concept .input-2 {
-  margin-left: 55px;
-  margin-top: 30px;
-  color: rgb(80, 80, 80);
-  position: absolute;
-  top: 250px;
-}
-.body .containe .concept .input-2 input {
-  border: 0px;
-  margin-left: 10px;
-}
-.body .containe .concept .input-2 .border {
-  width: 347px;
-  border-bottom: 1px solid silver;
-  margin-top: 5px;
-  margin-left: -12px;
-}
-.body .containe .concept .input-3 {
-  margin-left: 55px;
-  margin-top: 30px;
-  color: rgb(80, 80, 80);
-  position: absolute;
-  top: 310px;
-}
-.body .containe .concept .input-3 input {
-  border: 0px;
-  margin-left: 10px;
-}
-.body .containe .concept .input-3 .border {
-  width: 347px;
-  border-bottom: 1px solid silver;
-  margin-top: 5px;
-  margin-left: -12px;
-}
-.body .containe .concept .checkbox {
-  display: flex;
-  position: absolute;
-  top: 375px;
-}
-.body .containe .concept .checkbox input {
-  margin-top: 24px;
-  margin-left: 43px;
-}
-.body .containe .concept .checkbox .term {
-  color: silver;
-  font-size: 15px;
-  margin-top: 23px;
-  margin-left: 13px;
-}
-.body .containe .concept .button {
-  display: flex;
-}
-.body .containe .concept .button button {
-  width: 155px;
-  height: 47px;
-  background-color: rgb(67, 203, 131);
-  border-radius: 30px;
-  text-align: center;
-  border: 0px;
-  margin-left: 43px;
-}
-.body .containe .concept .button button a {
-  color: white;
-  text-decoration: none;
-}
-.body .containe .concept .button .column {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4px;
-}
-.body .containe .concept .button p {
-  font-size: 15px;
-  margin: 0px;
-  margin-left: 22px;
-}
-.body .containe .concept .button .p {
-  font-size: 15px;
-  margin: 0px;
-  margin-left: 22px;
-}
-.body .containe .concept .href {
-  margin-top: 25px;
-  margin-left: 43px;
-}
-.body .containe .concept .href .a {
-  color: silver;
-}
-.body .containe .img {
-  width: 235px;
-  height: 317px;
-  margin-top:67px;
-  margin-left: -18px;
-}
-.body .hamburger .new h1 {
-  color: rgb(67, 203, 131);
-  font-size: 41.5px;
-  margin-top: 83px;
-  margin-left: 380px;
-}
-.body .hamburger .new .all-new {
-  display: flex;
-}
-body .hamburger .new .all-new p {
-  margin-top: -10px;
-  color: rgb(80, 80, 80);
-  margin-left: 387px;
-  font-size: 18px;
-}
-.body .hamburger .new .all-new button {
-  width: 200px;
-  height: 50px;
-  background-color: rgb(67, 203, 131);
-  border-radius: 30px;
-  border: 0px;
-  margin-left: 277px;
-  margin-top: -15px;
-}
-.body .hamburger .new .all-new button a {
-  color: white;
-  text-decoration: none;
-}
-.body .hamburger .border {
-  width: 1150px;
-  border-bottom: 1px solid silver;
-  margin: auto;
-  margin-top: 62px;
-}
-.body .hamburger .november {
-  display: flex;
-}
-.body .hamburger .november .france {
-  width: 50%;
-}
-.body .hamburger .november .france h1 {
-  margin-left: 380px;
-  margin-top: 60px;
-  font-size: 34px;
-}
-.body .hamburger .november .france p {
-  color: rgb(80, 80, 80);
-  margin: 0px;
-  margin-left: 380px;
-  font-size: 19px;
-} 
-.body .hamburger .november .france .heart {
-  display: flex;
-  margin-left: 380px;
-  margin-top: 10px;
-}
-.body .hamburger .november .france .heart img {
-  width: 16px;
-  height: 14px;
-}
-.body .hamburger .november .france .heart .img-1 {
-  width: 16px;
-  height: 14px;
-  margin-left: 30px;
-}
-.body .hamburger .november .france .heart p {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 10px;
-}
-.body .hamburger .november .france .heart .five {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 315px;
-}
-.body .hamburger .november .darkness {
-  width: 50%;
-  margin-left: 55px;
-}
-.body .hamburger .november .darkness h1 {
-  margin-top: 60px;
-}
-.body .hamburger .november .darkness p {
-  color: rgb(80, 80, 80);
-  margin: 0px;
-  font-size: 19px;
-}
-.body .hamburger .november .darkness .heart {
-  display: flex;
-  margin-top: 36px;
-}
-.body .hamburger .november .darkness .heart img {
-  width: 16px;
-  height: 14px;
-}
-.body .hamburger .november .darkness .heart .img-1 {
-  width: 16px;
-  height: 14px;
-  margin-left: 30px;
-}
-.body .hamburger .november .darkness .heart p {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 10px;
-}
-.body .hamburger .november .darkness .heart .five {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 300px;
-}
-.body .hamburger .hanover {
-  display: flex;
-}
-.body .hamburger .hanover .mom {
-  width: 50%;
-  margin-left: 380px;
-}
-.body .hamburger .hanover .mom h1 {
-  font-size: 34px;
-  margin-top: 70px;
-}
-.body .hamburger .hanover .mom p {
-  color: rgb(80, 80, 80);
-  margin: 0px;
-  font-size: 18px;
-}
-.body .hamburger .hanover .mom .heart {
-  display: flex;
-  margin-top: 36px;
-}
-.body .hamburger .hanover .mom .heart img {
-  width: 16px;
-  height: 14px;
-}
-.body .hamburger .hanover .mom .heart .img-1 {
-  width: 16px;
-  height: 14px;
-  margin-left: 30px;
-}
-.body .hamburger .hanover .mom .heart p {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 10px;
-}
-.body .hamburger .hanover .mom .heart .five {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 295px;
-}
-.body .hamburger .hanover .world {
-  width: 50%;
-  margin-left: -320px;
-}
-.body .hamburger .hanover .world h1 {
-  font-size: 34px;
-  margin-top: 70px;
-}
-.body .hamburger .hanover .world p {
-  color: rgb(80, 80, 80);
-  margin: 0px;
-  font-size: 19px;
-}
-.body .hamburger .hanover .world .heart {
-  display: flex;
-  margin-top: 36px;
-}
-.body .hamburger .hanover .world .heart img {
-  width: 16px;
-  height: 14px;
-}
-.body .hamburger .hanover .world .heart .img-1 {
-  width: 18px;
-  height: 16px;
-  margin-left: 30px;
-}
-.body .hamburger .hanover .world .heart p {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 10px;
-}
-.body .hamburger .hanover .world .heart .five {
-  margin: 0px;
-  font-size: 15px;
-  margin-left: 295px;
-}
-.body .end {
-  width: 1920px;
-  height: 460px;
-  background-color: rgb(37, 44, 58);
-  margin-top: 120px;
-}
-.body .end .max {
-  display: flex;
-}
-.body .end .max .enter {
-  display: flex;
-  flex-direction: column;
-}
-.body .end .max .enter .lean {
-  display: flex;
-  margin-top: 75px;
-}
-.body .end .max .enter .lean img {
-  width: 50px;
-  height: 60px;
-  margin-left: 380px;
-}
-.body .end .max .enter .lean .learn {
-  display: flex;
-  flex-direction: column;
   margin-left: 5px;
 }
-.body .end .max .enter .lean .learn h1 {
-  margin: 0px;
-  color: white;
-  font-size: 21px;
-  margin-top: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.body .hamburger .pink .right .text .text-1 .first .boder {
+  border-bottom: 1px solid silver;
+  width: 350px;
+  margin-top: 5px;
 }
-.body .end .max .enter .lean .learn p {
-  margin: 0px;
-  font-size: 11px;
-  color: white;
+.body .hamburger .pink .right .text .checkbox {
+  display: flex;
+  margin: 30px 0px 0px 45px;
 }
-.body .end .max .enter .mix p {
-  color: silver;
-  margin-left: 390px;
+.body .hamburger .pink .right .text .checkbox p {
+  margin: 0px;
+  margin-left: 15px;
+  color: #87959c;
   font-size: 13px;
 }
-.body .end .max .enter .mix .border {
-  border-bottom: 1px solid rgb(80, 80, 80);
-  width: 227px;
-  margin-top: 18px;
-  margin-left: 390px;
+.body .hamburger .pink .right .text .bottom {
+  display: flex;
+  margin: 34px 0px 0px 45px;
 }
-.body .end .max .enter .img-6 {
-  width: 187px;
+.body .hamburger .pink .right .text .bottom button {
+  width: 150px;
+  height: 45px;
+  background-color: #43cb83;
+  border: 0px;
+  border-radius: 30px;
+}
+.body .hamburger .pink .right .text .bottom button a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.body .hamburger .pink .right .text .bottom .tel {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 0px 39px;
+}
+.body .hamburger .pink .right .text .bottom .tel p {
+  font-size: 13px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .hamburger .pink .right .text .bottom .tel .p {
+  font-size: 14px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .hamburger .pink .right .text .a {
+  margin: 20px 0px 0px 45px;
+}
+.body .hamburger .pink .right .text .a a {
+  color: #87959c;
+  font-size: 13px;
+}
+.body .hamburger .logo-1 {
+  margin: 0px 135px 0px -220px
+}
+.body .new {
+  margin-top: -420px;
+}
+.body .new .top-new h1 {
+  font-size: 40px;
+  color: #43cb83;
+}
+.body .new .top-new .top {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.body .new .top-new .top p {
+  font-size: 16px;
+  margin-left: 7px;
+  color: #5a6e79;
+}
+.body .new .top-new .top button {
+  width: 200px;
+  height: 50px;
+  background-color: #43cb83;
+  border: 0px;
+  border-radius: 30px;
+}
+.body .new .top-new .top button a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.body .new .top-new .boder {
+  border-bottom: 1px solid silver ;
+  margin-top: 70px;
+}
+.body .new .bottom-new {
+  margin-top: 60px;
+}
+.body .new .bottom-new .one {
+  display: flex;
+}
+.body .new .bottom-new .one .france {
+  display: flex;
+  flex-direction: column;
+}
+.body .new .bottom-new .one .france h1 {
+  font-size: 30px;
+  color: #252c3a;
+}
+.body .new .bottom-new .one .france p {
+  font-size: 16px;
+  color: #5a6e79;
+  margin-top: 28px;
+}
+.body .new .bottom-new .one .france .heart {
+  display: flex;
+  margin-top: 10px;
+}
+.body .new .bottom-new .one .france .heart .left {
+  width: 50%;
+  display: flex;
+}
+.body .new .bottom-new .one .france .heart .left .m {
+  display: flex;
+}
+.body .new .bottom-new .one .france .heart .left .m i{
+  margin-top: -2px;
+}
+.body .new .bottom-new .one .france .heart .left .m p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .one .france .heart .left .n {
+  margin-left: 31px;
+  display: flex;
+}
+.body .new .bottom-new .one .france .heart .left .n i {
+  margin-top: -2px;
+}
+.body .new .bottom-new .one .france .heart .left .n p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .one .france .heart .right {
+  width: 50%;
+  margin-left: 355px;
+}
+.body .new .bottom-new .one .france .heart .right p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .new .bottom-new .one .france-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+.body .new .bottom-new .one .france-1 h1 {
+  font-size: 30px;
+  color: #252c3a;
+}
+.body .new .bottom-new .one .france-1 p {
+  font-size: 16px;
+  color: #5a6e79;
+  margin-top: 28px;
+}
+.body .new .bottom-new .one .france-1 .heart {
+  display: flex;
+  margin-top: 28px;
+}
+.body .new .bottom-new .one .france-1 .heart .left {
+  width: 50%;
+  display: flex;
+}
+.body .new .bottom-new .one .france-1 .heart .left .m {
+  display: flex;
+}
+.body .new .bottom-new .one .france-1 .heart .left .m i{
+  color: #43cb83;
+  margin-top: -2px;
+}
+.body .new .bottom-new .one .france-1 .heart .left .m p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .one .france-1 .heart .left .n {
+  margin-left: 31px;
+  display: flex;
+}
+.body .new .bottom-new .one .france-1 .heart .left .n i {
+  margin-top: -2px;
+}
+.body .new .bottom-new .one .france-1 .heart .left .n p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .one .france-1 .heart .right {
+  width: 50%;
+  margin-left: 355px;
+}
+.body .new .bottom-new .one .france-1 .heart .right p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .new .bottom-new .two {
+  display: flex;
+  margin-top: 70px;
+}
+.body .new .bottom-new .two .mom {
+  display: flex;
+  flex-direction: column;
+}
+.body .new .bottom-new .two .mom h1 {
+  font-size: 30px;
+  color: #252c3a;
+}
+.body .new .bottom-new .two .mom p {
+  font-size: 16px;
+  color: #5a6e79;
+  margin-top: 25px;
+}
+.body .new .bottom-new .two .mom .heart {
+  display: flex;
+  margin-top: 35px;
+}
+.body .new .bottom-new .two .mom .heart .left {
+  width: 50%;
+  display: flex;
+}
+.body .new .bottom-new .two .mom .heart .left .m {
+  display: flex;
+}
+.body .new .bottom-new .two .mom .heart .left .m i {
+  margin-top: -2px;
+}
+.body .new .bottom-new .two .mom .heart .left .m p{
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .two .mom .heart .left .n {
+  margin-left: 31px;
+  display: flex;
+}
+.body .new .bottom-new .two .mom .heart .left .n i {
+  margin-top: -2px;
+}
+.body .new .bottom-new .two .mom .heart .left .n p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .two .mom .heart .right {
+  width: 50%;
+  margin-left: 335px;
+}
+.body .new .bottom-new .two .mom .heart .right p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .new .bottom-new .two .mom-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+.body .new .bottom-new .two .mom-1 h1 {
+  font-size: 30px;
+  color: #252c3a;
+}
+.body .new .bottom-new .two .mom-1 p {
+  font-size: 16px;
+  color: #5a6e79;
+  margin-top: 25px;
+}
+.body .new .bottom-new .two .mom-1 .heart {
+  display: flex;
+  margin-top: 35px;
+}
+.body .new .bottom-new .two .mom-1 .heart .left {
+  width: 50%;
+  display: flex;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .m {
+  display: flex;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .m i {
+  margin-top: -2px;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .m p{
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .n {
+  margin-left: 31px;
+  display: flex;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .n i {
+  margin-top: -2px;
+  color: #43cb83;
+}
+.body .new .bottom-new .two .mom-1 .heart .left .n p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+  margin-left: 10px;
+}
+.body .new .bottom-new .two .mom-1 .heart .right {
+  width: 50%;
+  margin-left: 353px;
+}
+.body .new .bottom-new .two .mom-1 .heart .right p {
+  font-size: 12px;
+  color: #5a6e79;
+  margin: 0px;
+}
+.body .footer {
+  height: 460px;
+  background-color: #252c3a;
+  margin-top: 145px;
+}
+.body .footer .top-footer {
+  display: flex;
+  margin-top: 77px;
+}
+.body .footer .top-footer .one {
+  display: flex;
+  flex-direction: column;
+}
+.body .footer .top-footer .one .max {
+  display: flex;
+}
+.body .footer .top-footer .one .max .learn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+} 
+.body .footer .top-footer .one .max .learn h1 {
+  font-size: 25px;
+  color: white;
+}
+.body .footer .top-footer .one .max .learn p {
+  color: white;
+  font-size: 11px;
+  margin: 0px;
+}
+.body .footer .top-footer .one p {
+  font-size: 13px;
+  color: #969595;
+  margin-top: 15px;
+}
+.body .footer .top-footer .one .boder {
+  border-bottom: 1px solid rgb(63, 63, 63);
+  width: 264px;
+  margin-top: 25px;
+}
+.body .footer .top-footer .one .ban {
+  display: flex;
+  margin-top: 25px;
+}
+.body .footer .top-footer .one .ban .be {
+  color: #4a4a4a;
+  margin-right: 10px;
+}
+.body .footer .top-footer .one .ban .banne {
+  margin: 0px 10px 0px;
+  color: #4a4a4a;
+}
+.body .footer .top-footer .one .ban .bane {
+  margin: 0px 10px 0px;
+  color: #0089fd;
+}
+.body .footer .top-footer .two {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0px 0px 30px;
+}
+.body .footer .top-footer .two p {
+  font-size: 14px;
+  color: white;
+}
+.body .footer .top-footer .two .text {
+  margin-top: 25px;
+}
+.body .footer .top-footer .two .text .min {
+  display: flex;
+  margin-top: 23px;
+}
+.body .footer .top-footer .two .text .min .p {
+  font-size: 13px;
+  color: #969595;
+}
+.body .footer .top-footer .two .text .min .o {
+  font-size: 11px;
+  color: #6b6b6b;
+  margin: 2px 0px 0px 3px;
+}
+.body .footer .top-footer .two-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0px 0px 50px;
+}
+.body .footer .top-footer .two-1 p {
+  font-size: 14px;
+  color: white;
+}
+.body .footer .top-footer .two-1 .text {
+  margin-top: 25px;
+}
+.body .footer .top-footer .two-1 .text .min {
+  display: flex;
+  margin-top: 23px;
+}
+.body .footer .top-footer .two-1 .text .min .p {
+  font-size: 13px;
+  color: #969595;
+}
+.body .footer .top-footer .forum {
+  margin: 16px 0px 0px 167.2px;
+}
+.body .footer .top-footer .forum p {
+  color: white;
+  font-size: 13px;
+}
+.body .footer .top-footer .forum .p {
+  color: #969595;
+  font-size: 13px;
+  margin-top: 45px;
+}
+.body .footer .top-footer .forum .buton {
+  width: 288px;
   height: 38px;
-  margin-left: 380px;
-  margin-top: 10px;
-}
-.body .end .max .ender h4 {
-  color: white;
-  margin: 0px;
-  margin-left: 30px;
-  margin-top: 95px;
-  font-size: 11px;
-}
-.body .end .max .ender .fix {
-  display: flex;
-  margin-left: 30px;
-  margin-top: 39px;
-}
-.body .end .max .ender .fix .p-5 {
-  color: silver;
-  margin: 0px;
-  font-size: 14px;
-}
-.body .end .max .ender .fix .p-4 {
-  margin: 0px;
-  color: rgb(124, 124, 124);
-  font-size: 13px;
-  margin-left: 3px;
-}
-.body .end .max .ender .day {
-  display: flex;
-  margin-left: 30px;
-  margin-top: 19px;
-}
-.body .end .max .ender .day .t {
-  color: silver;
-  margin: 0px;
-  font-size: 14px;
-}
-.body .end .max .ender .day .t-1 {
-  margin: 0px;
-  color: rgb(124, 124, 124);
-  font-size: 13px;
-  margin-left: 3px;
-}
-.body .end .max .enner {
-  display: flex;
-  flex-direction: column;
-  color: silver;
-  margin-left: 50px;
-}
-.body .end .max .enner h4 {
-  margin-top: 95px;
-  font-size: 11px;
-  color: white;
-}
-.body .end .max .enner .p {
- margin: 0px;
- margin-top: 23px;
- font-size: 14px;
-}
-.body .end .max .enner p {
- margin: 0px;
- margin-top: 20px;
- font-size: 14px;
-}
-.body .end .max .enper {
-  display: flex;
-  flex-direction: column;
-}
-.body .end .max .enper h4 {
-  margin-top: 95px;
-  font-size: 11px;
-  margin-left: 170px;
-  color: white;
-}
-.body .end .max .enper p {
-  margin: 0px;
-  font-size: 14px;
-  margin-left: 170px;
-  color: rgb(124, 124, 124);
-  margin-top: 20px;
-}
-.body .end .max .enper .input {
-  width: 260px;
-  height: 33px;
   background-color: white;
-  margin-top: 20px;
-  margin-left: 170px;
+  margin-top: 21px;
   display: flex;
+  align-items: center;
 }
-.body .end .max .enper .input .a {
-  width: 180px;
-  margin-left: 20px;
-  padding-top: 7px;
-  font-size: 14px;
-  color: rgb(124, 124, 124);
+.body .footer .top-footer .forum .buton .write {
+  width: 70%;
 }
-.body .end .max .enper .input .a input {
+.body .footer .top-footer .forum .buton .write span {
+  font-size: 12px;
+  color: #969595;
+  padding-left: 20px;
+}
+.body .footer .top-footer .forum .buton .write span input {
+  width: 99px;
   border: 0px;
-  width: 77px;
 }
-.body .end .max .enper .input .b {
-  width: 80px;
+.body .footer .top-footer .forum .buton .green {
+  width: 30%;
+  background-color: #43cb83;
+  height: 38px;
+  padding: 9px 0px 0px 10px;
 }
-.body .end .max .enper .input .b button {
-  background-color: rgb(67, 203, 131);
-  border: 0px;
-  width: 80px;
-  height: 33px;
-}
-.body .end .max .enper .input .b button a {
+.body .footer .top-footer .forum .buton .green a {
   text-decoration: none;
   color: white;
   font-size: 12px;
 }
-.body .end .copy {
-  width: 1920px;
+.body .footer .bottom-footer {
+  background-color: #1d232e;
   height: 60px;
-  background-color: rgb(29, 35, 46);
-  margin-top: 133px;
+  margin-top: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+.body .footer .bottom-footer .left {
   display: flex;
 }
-.body .end .copy .made {
+.body .footer .bottom-footer .left i {
+  margin: 2px 3px 0px;
+}
+.body .footer .bottom-footer .right {
   display: flex;
-  color: rgb(124, 124, 124);
-  margin-left: 390px;
 }
-.body .end .copy .made p {
-  font-size: 14px;
-  margin-top: 21px;
-}
-.body .end .copy .made img {
-  width: 15px;
-  height: 15px;
-  margin-top: 21px;
-  margin-left: 3px;
-}
-.body .end .copy .made .p {
-  font-size: 14px;
-  margin-left: 3px;
-  margin-top: 21px;
-}
-.body .end .copy .make {
-  display: flex;
-  color: rgb(124, 124, 124);
-  margin-top: 7px;
-  margin-left: 545px;
-}
-.body .end .copy .make p {
-  font-size: 14px;
-}
-.body .end .copy .make .p {
-  font-size: 14px;
-  margin-left: 23px;
+.body .footer .bottom-footer .right p {
+  margin: 0px 11px 0px;
 }
