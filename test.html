@@ -5,45 +5,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    header {
-      height: 100px;
-      background-color: red;
-      padding: 10px 0;
-    }
-    main {
-      height: 400px;
-      background-color: green;
-      padding: 10px 0;
-    }
-    footer {
-      padding: 10px 0;
-      height: 100px;
-      background-color: red;
-    }
-    .container {
-      width: 1140px;
-      height: 70px;
-      background-color: #FFF;
-      margin: auto;
-    }
-  </style>
 </head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    height: 500px;
+    background-color: aquamarine;
+  }
+  .row {
+    margin: 0 -15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    background-color: red;
+    position: relative;
+  }
+  .col {
+    width: 33.33%;
+    border: 1px solid #FFF;
+    padding: 18px 15px;
+  }
+  .content {
+    height: 100px;
+    background-color: yellow;
+  }
+@media screen and (max-width: 600px) {
+  .col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .col {
+    width: 100%;
+  }
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.violet {
+  background-color: violet;
+}
+</style>
 <body>
-  <header>
-    <div class="container">
-
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="content"></div>
+      </div>
+      <div class="col">
+        <div class="content"></div>
+      </div>
+      <div class="col absolute">
+        <div class="content violet"></div>
+      </div>
+      <div class="col">
+        <div class="content"></div>
+      </div>
+      <div class="col">
+        <div class="content"></div>
+      </div>
+      <div class="col">
+        <div class="content"></div>
+      </div>
+      <div class="col">
+        <div class="content"></div>
+      </div>
     </div>
-  </header>
-  <main>
-    <div class="container">
-
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-
-    </div>
-  </footer>
+  </div>
 </body>
 </html>

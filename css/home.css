@@ -160,6 +160,7 @@
 }
 .body .main .top-main {
   display: flex;
+  flex-wrap: wrap;
 }
 .body .main .top-main .engineer {
   width: 360px;
